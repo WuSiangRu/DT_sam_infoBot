@@ -26,6 +26,10 @@ class BotClient(discord.Client):
                 await message.reply('pong')
             if msg == 'ping ping':
                 await message.reply('pong pong')
+            if msg == '想喝奶茶了':
+                await message.reply('別喝啦!!')
+            if msg == '今天晚餐你有頭緒嗎?':
+                await message.reply('別吃省錢最快')
 
 if __name__ == "__main__":
     client = BotClient()
