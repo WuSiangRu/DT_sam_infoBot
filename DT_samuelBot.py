@@ -31,6 +31,18 @@ class BotClient(discord.Client):
             if msg == '今天晚餐你有頭緒嗎?':
                 await message.reply('別吃省錢最快')
 
+            if msg == '想看貓貓':
+                file = discord.File(r"./img/cat.png", filename="cat.png")
+                await message.channel.send(file=file)
+
+            if msg == '想不到晚餐吃什麼':
+                file = discord.File(r"./img/first.png", filename="first.png")
+                await message.channel.send(file=file)
+
+            if msg == '聽說明天情人節?':
+                file = discord.File(r"./img/dog.png", filename="dog.png")
+                await message.channel.send(file=file)
+
 if __name__ == "__main__":
     client = BotClient()
     client.run(accountDICT["discord_token"])
