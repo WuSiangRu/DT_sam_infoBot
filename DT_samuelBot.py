@@ -4,7 +4,7 @@
 import discord
 import json
 from DrinkShop import runLoki
-with open("account.info", encoding="utf-8") as f:
+with open("account.info", encoding="UTF-8") as f:
     accountDICT = json.loads(f.read())
 
 class BotClient(discord.Client):
