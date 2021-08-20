@@ -1,2 +1,5 @@
 account.info
 .idea
+.*
+__pycache__
+intent\new_intent
